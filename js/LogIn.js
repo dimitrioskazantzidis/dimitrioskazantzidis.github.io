@@ -37,9 +37,9 @@ function check(){
     
 
     if(userfName.value == storedfName && userlName.value == storedlName){
-        window.location.href="Homepage.html";
+        window.location.href="html/Homepage.html";
     }else if (userfName.value == sesstoredfName && userlName.value == sesstoredlName){
-		window.location.href="Homepage.html";
+		window.location.href="html/Homepage.html";
     } else {
 		alert('Error on login');
 	}
@@ -54,7 +54,7 @@ function autoLog(){
     let storedlName = localStorage.getItem('last name');
 	
 	if(storedfName !== null && storedlName !== null ){
-		window.location.href="Homepage.html";
+		window.location.href="html/Homepage.html";
 	}
 }
 
