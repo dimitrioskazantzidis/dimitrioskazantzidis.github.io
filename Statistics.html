@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width , initial-scale=1.0">
+<title>Damian Lillard Statistics</title>
+<link rel="stylesheet" href="mystyle.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+
+</style>
+</head>
+<body>
+<header>
+<div class="topnav" id="topnav">
+<a href="Awards.html">Awards</a>
+<a href="#Statistics" class="active">Statistics</a>
+<a href="Career.html">Career</a>
+<a href="Homepage.html">Home</a>
+<a href="javascript:void(0);" class="icon" id="icon">&#9776;</a>
+</div>
+</header>
+
+<nav>
+<h4>Follow us on</h4>
+<a href="https://www.instagram.com/damianlillard/?hl=el" target="_blank"><img src="unnamed.png" alt="instagram" style="width:42px;height:42px;"></a>
+<a href="https://twitter.com/dame_lillard" target="_blank"><img src="app-icons-twitter.png" alt="twitter" style="width:42px;height:42px;"></a>
+<a href="https://www.facebook.com/DamianLillard" target="_blank"><img src="facebook.jpeg" alt="facebook" style="width:42px;height:42px;"></a>
+<a href="https://www.youtube.com/channel/UCIhTfcMzbR5wyNeh57ju0ug" target="_blank"><img src="youtube.png" alt="youtube" style="width:42px;height:42px;"></a>
+</nav>
+
+<main>
+<h2>Statistics</h2>
+<h3>NBA</h3>
+<h4>Regular season <button id="button1">Hide table</button></h4>
+
+<div class="addData">
+<h5> Add data to regular season </h5>
+    <form name='add-data'>
+	
+	
+	
+        <div class="add_class_com">
+        <label for="Year">Year</label>
+        <input type="text" id="add_Year" placeholder="Add Year" required>
+		</div>
+         
+		<div class="add_class_com"> 
+        <label for="Team">Team</label>
+        <input type="text" id= "add_Team" placeholder="Add Team" required>
+		</div>
+		
+		<div class="add_class_com">
+		<label for="GP">GP</label>
+        <input type="number" id= "add_GP" placeholder="Add GP" required min="0" max="82">
+		</div>
+		
+		<div class="add_class_com">		
+		<label for="GS">GS</label>
+        <input type="number" id= "add_GS" placeholder="Add GS" required min="0" max="82">
+		</div>
+		
+		<div class="add_class_com">
+		<label for="MPG">MPG</label>
+        <input type="number" id= "add_MPG" placeholder="Add MPG" required min="0.0" max="48">
+		</div>
+		
+		<div class="add_class_com">		
+		<label for="FG%">FG%</label>
+        <input type="number" id= "add_FG%" placeholder="Add FG%" required min="0.0" max="1.0">
+		</div>
+		
+		<div class="add_class_com">
+		<label for="3P%">3P%</label>
+        <input type="number" id= "add_3P%" placeholder="Add 3P%" required min="0.0" max="1.0">
+		</div>
+		
+		<div class="add_class_com">		
+		<label for="FT%">FT%</label>
+        <input type="number" id= "add_FT%" placeholder="Add FT%" required min="0.0" max="1.0">
+		</div>
+		
+		<div class="add_class_com">
+		<label for="RPG">RPG</label>
+        <input type="number" id= "add_RPG" placeholder="Add RPG" required min="0">
+		</div>
+		
+		<div class="add_class_com">		
+		<label for="APG">APG</label>
+        <input type="number" id= "add_APG" placeholder="Add APG" required min="0">
+		</div>
+		
+		<div class="add_class_com">
+		<label for="SPG">SPG</label>
+        <input type="number" id= "add_SPG" placeholder="Add SPG" required min="0" >
+		</div>
+		
+		<div class="add_class_com">		
+		<label for="BPG">BPG</label>
+        <input type="number" id= "add_BPG" placeholder="Add BPG" required min="0" >
+		</div>
+		
+		<div class="add_class_com">
+		<label for="PPG">PPG</label>
+        <input type="number" id= "add_PPG" placeholder="Add PPG" required min="0" >
+		</div>
+		
+		<div class="add_buttons">
+        <input id= "add_data" type="button" value="Add">
+		<input type="reset" value="Reset">
+		<input id= "clear_data" type="button" value="Clear">
+		</div>
+
+    </form>
+</div>
+<br>
+<form>
+    	
+	<div class="multiselect">
+    <div class="selectBox" id="selectBox">
+      <select>
+        <option>Select a column to hide</option>
+      </select>
+      <div class="overSelect"></div>
+    </div>
+    <div id="checkboxes">
+      <label for="check_year">
+        <input type="checkbox" id="check_year" value='0'  checked/>Year</label>
+      <label for="check_team">
+        <input type="checkbox" id="check_team" value='1' checked/>Team</label>
+      <label for="check_gp">
+        <input type="checkbox" id="check_gp" value='2' checked/>GP</label>
+	  <label for="check_gs">
+        <input type="checkbox" id="check_gs" value='3' checked/>GS</label>
+	  <label for="check_mpg">
+        <input type="checkbox" id="check_mpg" value='4' checked/>MPG</label>
+	  <label for="check_fg">
+        <input type="checkbox" id="check_fg" value='5' checked/>FG%</label>
+	  <label for="check_p3">
+        <input type="checkbox" id="check_p3" value='6' checked/>3P%</label>
+	 <label for="check_ft">
+        <input type="checkbox" id="check_ft" value='7' checked/>FT%</label>
+	 <label for="check_rpg">
+        <input type="checkbox" id="check_rpg" value='8' checked/>RPG</label>
+	 <label for="check_apg">
+        <input type="checkbox" id="check_apg" value='9' checked/>APG</label>
+	 <label for="check_spg">
+        <input type="checkbox" id="check_spg" value='10' checked/>SPG</label>
+	 <label for="check_bpg">
+        <input type="checkbox" id="check_bpg" value='11' checked/>BPG</label>
+	 <label for="check_ppg">
+        <input type="checkbox" id="check_ppg" value='12' checked/>PPG</label>
+    </div>
+  </div>
+</form>
+
+<p id="help"> *Click on the headers to sort the data asc. and desc.*</p>
+
+<div class='tablewrapper'>
+<table id="table1">
+<thead>
+<tr>
+<th>Year</th>
+<th>Team</th>
+<th><abbr title="Games Played">GP</abbr></th>
+<th><abbr title="Games Started">GS</abbr></th>
+<th><abbr title="Minutes per game">MPG</abbr></th>
+<th><abbr title="Field goal percentage">FG%</abbr></th>
+<th><abbr title="3-pt field goal percentage">3P%</abbr></th>
+<th><abbr title="Free throw percentage">FT%</abbr></th>
+<th><abbr title="Rebounds per game">RPG</abbr></th>
+<th><abbr title="Assists per game">APG</abbr></th>
+<th><abbr title="Steals per game">SPG</abbr></th>
+<th><abbr title="Blocks per game">BPG</abbr></th>
+<th><abbr title="Points per game">PPG</abbr></th>
+</tr>
+</thead>
+<tbody id="StatsReg">
+</tbody>
+</table>
+</div>
+<h4>Playoffs <button id="button2">Hide table</button></h4>
+
+<input type="text" id="myInput"  placeholder="Search for year..">
+
+
+
+<div class='tablewrapper'>
+<table id="table2">
+<thead>
+<tr>
+<th>Year</th>
+<th>Team</th>
+<th><abbr title="Games Played">GP</abbr></th>
+<th><abbr title="Games Started">GS</abbr></th>
+<th><abbr title="Minutes per game">MPG</abbr></th>
+<th><abbr title="Field goal percentage">FG%</abbr></th>
+<th><abbr title="3-pt field goal percentage">3P%</abbr></th>
+<th><abbr title="Free throw percentage">FT%</abbr></th>
+<th><abbr title="Rebounds per game">RPG</abbr></th>
+<th><abbr title="Assists per game">APG</abbr></th>
+<th><abbr title="Steals per game">SPG</abbr></th>
+<th><abbr title="Blocks per game">BPG</abbr></th>
+<th><abbr title="Points per game">PPG</abbr></th>
+</tr>
+</thead>
+<tbody id="StatsPlayoff">
+
+</tbody>
+</table>
+</div>
+</main>
+
+<div class="side2">
+<h4> Disclaimer: </h4>
+<p> This page is only part of a project I run for my Master in university of Macedonia.</p>
+</div>
+<footer>
+<p>Creator: Kazantzidis Dimitris<br>
+Contact me on:<a href="mailto:mai21019@uom.edu.gr">mai21019@uom.edu.gr</a></p>
+</footer>
+<script src="dynamicTable.js"></script>
+<script src="myjavascript.js"></script>
+
+</body>
+</html>
+
