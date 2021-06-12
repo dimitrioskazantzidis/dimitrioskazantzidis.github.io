@@ -25,7 +25,8 @@ self.addEventListener('install', function (event) {
                 '/js/calculateAge.js',
                 '/js/dynamicTable.js',
 				'/js/LogIn.js',
-				'/js/myjavascript.js'
+				'/js/myjavascript.js',
+				'/js/common.js'
             ]);
         })
     );
