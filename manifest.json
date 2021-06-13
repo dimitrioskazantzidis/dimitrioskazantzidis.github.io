@@ -1,14 +1,14 @@
 {
   "short_name": "Damian Lillard",
-  "name": "Damian Lillard FanPage",
+  "name": "Damian Lillard's FanPage",
   "icons": [
     {
-      "src": "/assets/192.png",
+      "src": "/assets/basketball 192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/assets/512.png",
+      "src": "/assets/basketball 512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
